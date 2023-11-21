@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "dist/ssr/package.json",
+      "use": "@vercel/node",
+      "config": { "distDir": "dist/ssr" }
+    }
+  ],
+  "routes": [{ "src": "/(.*)", "dest": "dist/ssr" }]
+}
